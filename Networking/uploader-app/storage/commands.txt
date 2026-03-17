@@ -1,0 +1,13 @@
+#Installing WSL:
+wsl --install
+
+
+# Installing Build Essentials:
+sudo apt update
+sudo apt install build-essential
+
+
+# Installing NVM & Node.js:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+. ~/.nvm/nvm.sh
+nvm install 20

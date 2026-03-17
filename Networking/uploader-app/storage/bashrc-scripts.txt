@@ -1,0 +1,21 @@
+# Put these into your .bashrc (the file is in your Linux home directory):
+
+des () {
+    cd /mnt/c/Users/<your-windows-username>/Desktop
+}
+
+# ----- Resuse last working directory ----- #
+restore_cwd() {
+  if [ -f ~/.saved_wsl_cwd ]; then
+    cd "$(cat ~/.saved_wsl_cwd)"
+    rm ~/.saved_wsl_cwd
+  fi
+}
+
+cd() {
+  command cd "$@"
+  echo "$(pwd)" > ~/.saved_wsl_cwd
+}
+
+restore_cwd
+# ----------------------------------------- #

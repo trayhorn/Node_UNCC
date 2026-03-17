@@ -3,7 +3,9 @@ const fs = require('node:fs/promises');
 const path = require('node:path');
 
 const PORT = 4080;
-const HOST = '127.0.0.1';
+// const HOST = '127.0.0.1';
+const HOST = '192.168.0.100';
+
 
 const clearLine = (dir) => {
   return new Promise((resolve) => {
