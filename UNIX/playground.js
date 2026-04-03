@@ -1,18 +1,26 @@
 const { spawn, exec } = require("node:child_process");
+const {stdin, stdout, stderr} = require("node:process");
 
 const subprocess = spawn("ls", ['-l']);
 
-subprocess.stdout.on("data", (data) => {
-  console.log(data.toString());
-});
+// stdin.on("data", (data) => {
+//   stdout.write(`Got this data from standard in: ${data.toString("utf-8")}`);
+// })
 
-exec('ls -l', (error, stdout, stderr) => {
-  if(stderr) {
-    console.error(error);
-    return;
-  }
+stdout.write("This is some text that I want \n");
+stderr.write("This is some text that I may not want \n");
 
-  console.log(stdout);
+// stdout.on("data", (data) => {
+//   console.log(data.toString());
+// });
 
-  console.log(`stderr: ${stderr}`);
-})
+// exec('ls -l', (error, stdout, stderr) => {
+//   if(stderr) {
+//     console.error(error);
+//     return;
+//   }
+
+//   console.log(stdout);
+
+//   console.log(`stderr: ${stderr}`);
+// })
