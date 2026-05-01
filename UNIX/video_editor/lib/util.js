@@ -1,0 +1,22 @@
+const fs = require("node:fs/promises");
+const util = {};
+
+// Delete a file if exists, throw no error if file does not exist
+util.deleteFile = async (path) => {
+  try {
+    await fs.unlink(path);
+  } catch (error) {
+    // do nothing
+  }
+}
+
+// Delete a folder if exists and if not, the function will not throw an error
+util.deleteFolder = async (path) => {
+  try {
+    await fs.rm(path, {recursive: true});
+  } catch (error) {
+    // do nothing
+  }
+}
+
+module.exports = util;

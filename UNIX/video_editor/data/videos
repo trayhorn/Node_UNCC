@@ -1,0 +1,78 @@
+[
+  {
+    "id": 7,
+    "videoId": "cb4ef687",
+    "name": "file_example_MP4_1920_18MG",
+    "extension": "mp4",
+    "dimensions": {
+      "width": 1920,
+      "height": 1080
+    },
+    "userId": 1,
+    "extractedAudio": false,
+    "resizes": {}
+  },
+  {
+    "id": 6,
+    "videoId": "18377be4",
+    "name": "file_example_MP4_1920_18MG",
+    "extension": "mp4",
+    "userId": 1,
+    "extractedAudio": false,
+    "resizes": {}
+  },
+  {
+    "id": 5,
+    "videoId": "8fb9a015",
+    "name": "file_example_MP4_1920_18MG",
+    "extension": "mp4",
+    "userId": 1,
+    "extractedAudio": false,
+    "resizes": {}
+  },
+  {
+    "id": 4,
+    "videoId": "0ee59913",
+    "name": "file_example_MP4_1920_18MG",
+    "extension": "mp4",
+    "userId": 1,
+    "extractedAudio": false,
+    "resizes": {}
+  },
+  {
+    "id": 3,
+    "videoId": "7ed0ba5b",
+    "name": "file_example_MP4_1920_18MG",
+    "extension": "mp4",
+    "userId": 1,
+    "extractedAudio": false,
+    "resizes": {}
+  },
+  {
+    "id": 2,
+    "videoId": "ad4b2e85",
+    "name": "file_example_MP4_1920_18MG",
+    "extension": "mp4",
+    "userId": 1,
+    "extractedAudio": false,
+    "resizes": {}
+  },
+  {
+    "id": 1,
+    "videoId": "4dcea611",
+    "name": "file_example_MP4_1920_18MG",
+    "extension": "mp4",
+    "userId": 1,
+    "extractedAudio": false,
+    "resizes": {}
+  },
+  {
+    "id": 0,
+    "videoId": "f97ea685",
+    "name": "file_example_MP4_1920_18MG",
+    "extension": "mp4",
+    "userId": 1,
+    "extractedAudio": false,
+    "resizes": {}
+  }
+]
